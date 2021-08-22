@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="title">express documentation</header>
+      <a class="nav-link" href="#installation">Installation</a>
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#quick_start">Quick Start</a>
+      <a class="nav-link" href="#examples">Examples</a>
+      <a class="nav-link" href="#tests">Tests</a>
+    </nav>
+    <main id="main-doc">
+      <section id="installation" class="main-section">
+        <header>Installation</header>
+        <p>This is a Node.js module available through the npm registry.</p>
+        <p>
+          Before installing, download and install Node.js. Node.js 0.10 or
+          higher is required.
+        </p>
+        <p>Installation is done using the npm install command:</p>
+        <code>$ npm install express</code>
+      </section>
+      <section id="features" class="main-section">
+        <header>Features</header>
+        <ul>
+          <li>Robust routing</li>
+          <li>Focus on high performance</li>
+          <li>Super-high test coverage</li>
+          <li>HTTP helpers (redirection, caching, etc)</li>
+          <li>View system supporting 14+ template engines</li>
+        </ul>
+      </section>
+      <section id="quick_start" class="main-section">
+        <header>Quick Start</header>
+        <p>
+          The quickest way to get started with express is to utilize the
+          executable express(1) to generate an application as shown below:
+        </p>
+
+        <p>Install the executable.</p>
+        <p>The executable's major version will match Express's:</p>
+        <code>$ npm install -g express-generator@4</code>
+        <p>Create the app:</p>
+        <code>$ express /tmp/foo && cd /tmp/foo</code>
+        <p>Install dependencies:</p>
+        <code>$ npm install</code>
+        <p>Start the server:</p>
+        <code>$ npm start</code>
+        <p>View the website at: http://localhost:3000</p>
+      </section>
+      <section id="examples" class="main-section">
+        <header>Examples</header>
+        <p>
+          To view the examples, clone the Express repo and install the
+          dependencies:
+        </p>
+        <code
+          >$ git clone git://github.com/expressjs/express.git --depth 1 $ cd
+          express $ npm install</code
+        >
+        <p>Then run whichever example you want:</p>
+        <code>$ node examples/content-negotiation</code>
+      </section>
+      <section id="tests" class="main-section">
+        <header>Tests</header>
+        <p>
+          To run the test suite, first install the dependencies, then run npm
+          test:
+        </p>
+        <code>$ npm install $ npm test</code>
+      </section>
+    </main>
+  </body>
+</html>

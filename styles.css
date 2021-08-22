@@ -1,0 +1,64 @@
+body {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "nav main";
+}
+
+header {
+  font-weight: bold;
+  font-size: 34px;
+}
+section {
+  margin: 60px;
+}
+code {
+  background-color: lightgoldenrodyellow;
+  padding: 15px;
+  line-height: 2;
+}
+
+#navbar {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#navbar a {
+  display: block;
+  padding: 20px;
+  grid-area: nav;
+  border: solid;
+  border-color: darkgrey;
+  border-width: thin;
+  color: black;
+  text-decoration: none;
+}
+
+#main-doc {
+  margin-left: 10px;
+  overflow: auto;
+  grid-area: main;
+}
+#title {
+  font-size: 26px;
+}
+#installation {
+  margin-top: 0px;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-areas:
+      "nav"
+      "main";
+  }
+  nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 600px) {
+  nav {
+    position: sticky;
+    top: 0;
+    align-self: start;
+  }
+}
